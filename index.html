@@ -86,13 +86,23 @@
 <body>
   <main>
     <h1>Política de privacidade do Caderninho</h1>
-    <p class="updated"><strong>Última atualização:</strong> 19 de outubro de 2026</p>
+    <p class="updated"><strong>Última atualização:</strong> 5 de novembro de 2026</p>
 
     <p>
-      O Caderninho é um aplicativo de controle local de clientes, vendas,
-      serviços e pagamentos pendentes. Esta política explica quais dados são
-      tratados e como eles permanecem sob controle da pessoa que utiliza o
-      aplicativo.
+      O Caderninho é um aplicativo de controle de clientes, vendas, serviços e
+      pagamentos pendentes, com login e sincronização de dados. Esta política
+      explica quais dados são tratados e como eles permanecem sob controle da
+      pessoa que utiliza o aplicativo.
+    </p>
+
+    <h2>Conta e login</h2>
+    <p>
+      O Caderninho utiliza o Firebase Authentication, serviço do Google, para
+      criar e autenticar a conta da pessoa usuária. No login são tratados
+      identificador de conta, e-mail e, dependendo do método escolhido, senha
+      ou token de autenticação fornecidos pelo provedor de login. Esses dados
+      são necessários para proteger o acesso aos registros e permitir o uso em
+      mais de um aparelho.
     </p>
 
     <h2>Dados tratados</h2>
@@ -107,15 +117,20 @@
       necessários para as funcionalidades principais do aplicativo.
     </p>
 
-    <h2>Armazenamento e backup</h2>
+    <h2>Armazenamento, sincronização e backup</h2>
     <p>
-      Os dados são armazenados localmente no aparelho em um banco de dados
-      privado do aplicativo. O desenvolvedor do Caderninho não recebe, acessa
-      nem mantém uma cópia desses registros em servidor próprio.
+      Os dados de clientes, vendas e pagamentos são armazenados no banco de
+      dados local do aparelho e sincronizados com o Firebase (Cloud
+      Firestore), infraestrutura do Google, de forma vinculada à conta da
+      pessoa usuária. Essa sincronização permite manter os registros
+      disponíveis ao acessar o aplicativo com a mesma conta em outro aparelho.
+      O desenvolvedor do Caderninho não acessa nem compartilha esses registros
+      com terceiros além da infraestrutura do Google necessária para operar o
+      serviço.
     </p>
     <p>
-      O Caderninho permite que o sistema Android inclua exclusivamente o banco
-      de dados local no backup da conta Google e na transferência entre
+      O Caderninho também permite que o sistema Android inclua o banco de
+      dados local no backup da conta Google e na transferência entre
       aparelhos. A disponibilidade e a retenção desse backup dependem das
       configurações do aparelho, da conta Google e dos serviços de backup do
       Android.
@@ -141,29 +156,38 @@
     <h2>Compartilhamento e comercialização</h2>
     <p>
       O desenvolvedor não vende dados pessoais e não compartilha os registros
-      com redes de publicidade, ferramentas de análise ou servidores próprios.
+      com redes de publicidade ou ferramentas de análise. Os dados de login e
+      de sincronização são tratados exclusivamente pela infraestrutura do
+      Firebase/Google necessária para operar a conta e a sincronização, sujeita
+      também à
+      <a href="https://policies.google.com/privacy">política de privacidade do Google</a>.
       Não há anúncios nem rastreamento comportamental no aplicativo.
     </p>
 
     <h2>Exclusão e controle dos dados</h2>
     <p>
       A pessoa usuária pode excluir clientes e vendas diretamente no
-      aplicativo. A desinstalação remove os dados locais; cópias mantidas pelo
-      backup do Android seguem as configurações e os prazos da conta Google.
+      aplicativo. A desinstalação remove os dados locais; os dados
+      sincronizados na conta e as cópias mantidas pelo backup do Android
+      seguem as configurações e os prazos da conta Google. Solicitações de
+      exclusão da conta e dos dados sincronizados podem ser feitas pelo
+      contato informado nesta política.
     </p>
 
     <h2>Segurança</h2>
     <p>
-      O banco de dados fica no armazenamento privado do aplicativo. O
-      Caderninho não permite tráfego de rede em texto claro e não solicita
-      acesso à agenda, localização, câmera, microfone ou arquivos pessoais.
+      O banco de dados local fica no armazenamento privado do aplicativo e o
+      acesso à conta é protegido pela autenticação do Firebase. O Caderninho
+      não permite tráfego de rede em texto claro e não solicita acesso à
+      agenda, localização, câmera, microfone ou arquivos pessoais.
     </p>
 
     <h2>Alterações nesta política</h2>
     <p>
-      Esta política será atualizada caso o aplicativo passe a usar contas,
-      sincronização em nuvem, análise de uso ou qualquer novo tratamento de
-      dados. A data no início do documento indicará a revisão mais recente.
+      Esta política será atualizada caso o aplicativo passe a usar novos
+      provedores de login, novos serviços de sincronização ou análise de uso,
+      ou qualquer novo tratamento de dados. A data no início do documento
+      indicará a revisão mais recente.
     </p>
 
     <h2>Contato</h2>
