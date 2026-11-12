@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Exclusão de conta e dados | Caderninho</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #fffdf7;
+      --surface: #ffffff;
+      --text: #173d63;
+      --muted: #526579;
+      --rule: #8cb4d9;
+      --margin: #d86b62;
+      --link: #285a8a;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #151a20;
+        --surface: #1e252d;
+        --text: #e4edf7;
+        --muted: #bdc9d6;
+        --rule: #304b66;
+        --margin: #b45a54;
+        --link: #9bc7ed;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background:
+        linear-gradient(90deg, transparent 0 47px, var(--margin) 48px 49px, transparent 50px),
+        repeating-linear-gradient(
+          var(--background) 0 31px,
+          var(--rule) 32px 33px
+        );
+      font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    main {
+      width: min(840px, calc(100% - 32px));
+      margin: 40px auto;
+      padding: 32px clamp(24px, 6vw, 64px);
+      background: color-mix(in srgb, var(--surface) 96%, transparent);
+      border: 1px solid var(--rule);
+      border-radius: 20px;
+      box-shadow: 0 12px 40px rgb(0 0 0 / 12%);
+    }
+
+    h1, h2 {
+      line-height: 1.25;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    h2 {
+      margin-top: 2rem;
+    }
+
+    .updated {
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--link);
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--rule);
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Exclusão de conta e dados do Caderninho</h1>
+    <p class="updated"><strong>Última atualização:</strong> 12 de novembro de 2026</p>
+
+    <p>
+      Esta página explica como solicitar a exclusão da conta e dos dados
+      sincronizados do Caderninho, conforme a
+      <a href="index.html">política de privacidade</a>.
+    </p>
+
+    <h2>Pelo aplicativo (recomendado)</h2>
+    <p>
+      Quem tem o aplicativo instalado e está com a sessão ativa pode excluir a
+      própria conta diretamente pelo Caderninho, sem depender de terceiros:
+    </p>
+    <ol>
+      <li>Abra o Caderninho e entre em <strong>Meu perfil</strong>;</li>
+      <li>Role até a seção <strong>Zona de risco</strong>;</li>
+      <li>Toque em <strong>Excluir conta</strong> e confirme.</li>
+    </ol>
+    <p>
+      A exclusão é imediata: a conta de login, os clientes, vendas e
+      pagamentos sincronizados na nuvem são apagados permanentemente e a
+      pessoa usuária é desconectada do aplicativo.
+    </p>
+
+    <h2>Sem acesso ao aplicativo</h2>
+    <p>
+      Quem não tem mais o aplicativo instalado, ou não consegue acessar a
+      conta, pode solicitar a exclusão pela área pública de
+      <a href="https://github.com/AmanddaLuz/caderninho-privacy/issues">contato e solicitações</a>.
+      Para localizar a conta corretamente, informe:
+    </p>
+    <ul>
+      <li>o e-mail (ou outro identificador) usado para entrar no Caderninho;</li>
+      <li>o pedido explícito de exclusão da conta e dos dados sincronizados.</li>
+    </ul>
+    <p>
+      A solicitação é tratada em até 5 dias úteis. A confirmação é enviada
+      pelo mesmo canal usado no contato.
+    </p>
+
+    <h2>O que é excluído</h2>
+    <p>Ao concluir a exclusão, são apagados permanentemente:</p>
+    <ul>
+      <li>a conta de login (Firebase Authentication);</li>
+      <li>clientes, vendas/serviços e pagamentos sincronizados (Cloud Firestore);</li>
+      <li>o vínculo da conta com o banco de dados local do aparelho.</li>
+    </ul>
+    <p>
+      Cópias que o sistema Android já tenha incluído no backup da conta
+      Google seguem as configurações e os prazos de retenção do próprio
+      backup do Android, fora do controle do Caderninho.
+    </p>
+
+    <footer>Caderninho — controle local de clientes e vendas.</footer>
+  </main>
+</body>
+</html>
